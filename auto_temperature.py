@@ -83,7 +83,7 @@ def main():
         print("点击保存")
         time.sleep(t)
 
-        driver.find_element_by_xpath('/html/body/div[60]/div[1]/div[1]/div[2]/div[2]/a[1]').click()
+        driver.find_element_by_xpath('/html/body/div[63]/div[1]/div[1]/div[2]/div[2]/a[1]').click()
         print(name + '\t体温上报成功')
         msg += name + '\t体温上报成功' + '\n\n'
         driver.quit()
