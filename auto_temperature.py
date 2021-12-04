@@ -88,9 +88,9 @@ def main():
         #driver.find_element_by_xpath('//*[@id="dialogd51907d4-7135-f983-df1c-b453072f10be"]/div[1]/div[1]/div[2]/div[2]/a[1]').click()
         print(name + '\t体温上报成功')
         msg += name + '\t体温上报成功' + '\n\n'
-        
         url = "http://pushplus.hxtrip.com/send?token=429b298fbe7c4e2ba6e8d6bba5ce7001&title=体温上报成功&content=体温上报成功&template=html"
         driver.get(url)
+        time.sleep(t)
         driver.quit()
         return
 
