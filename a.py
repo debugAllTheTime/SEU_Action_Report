@@ -20,10 +20,10 @@ chrome_opt.add_argument('log-level=3')
 chrome_opt.add_argument('disable-infobars')
 chrome_opt.add_argument('--disable-dev-shm-usage')
 chrome_opt.add_argument('--disable-gpu')
-#chrome_opt.add_argument('headless')
+chrome_opt.add_argument('headless')
 # chrome_opt.binary_location = r'./chromedriver.exe'
 file_executable_path = r'./chromedriver.exe'  # for Chrome
-browser = webdriver.Chrome( options=chrome_opt)
+browser = webdriver.Chrome( executable_path='chromedriver',options=chrome_opt)
 # 登陆网址
 url = 'https://newids.seu.edu.cn/authserver/login?goto=http://my.seu.edu.cn/index.portal'
 # 打卡网址
