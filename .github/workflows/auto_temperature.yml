@@ -30,4 +30,4 @@ jobs:
         SERVERCHAN: ${{ secrets.SERVERCHAN }}
       run: |
         bash Init_Building_Dependencies.sh
-        python3 a.py
+        python3 auto_temperature.py
